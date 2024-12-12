@@ -97,6 +97,7 @@ text-decoration: underline;
         justify-content: space-between; 
     }
 
+
     article {
         flex: 1; 
         margin-bottom: 0; 
@@ -109,13 +110,17 @@ text-decoration: underline;
 }
 
 /* pantallas pequeñas / móviles */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
     .container {
         flex-direction: column; 
     }
 
+    h1 { font-size: 38px;}
+    h2 {font-size: 22px;}
+    sub, p, li {font-size: 14px;}
+
     a.back-to-top {
-        font-size: 18px; 
+        font-size: 12px; 
     }
 
     article {
