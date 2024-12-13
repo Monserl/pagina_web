@@ -168,6 +168,13 @@ footer {
     .product-grid li {
         width: calc(50% - 20px); 
     }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+        margin-top: 20px;
+    }
 }
 /* pantallas pequeñas / móviles */
 @media (max-width: 600px) {
