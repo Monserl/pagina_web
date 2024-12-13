@@ -190,6 +190,9 @@ footer {
         height: 100%; 
         border: 0;
     }
+    .responsive-video iframe {
+        width: 100%; 
+    }
 }
 /* pantallas pequeñas / móviles */
 @media (max-width: 600px) {
@@ -210,11 +213,16 @@ footer {
         padding-right: 5px; 
     }
     .product-grid li {
-        width: 100%; /* 1 producto por fila en pantallas pequeñas */
+        width: 100%; 
     }
 
     form input[type="email"] {
-        width: 100%; /* Ajustar formulario a pantallas pequeñas */
+        width: 100%; 
     }
+
+    .responsive-video iframe {
+        width: 100%; 
+    }
+
 }
 
