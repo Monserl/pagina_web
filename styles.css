@@ -92,6 +92,60 @@ nav ul li {
 text-decoration: underline;
    }
 
+   .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-grid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: calc(25% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-grid img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-grid p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
 
    /* centrar los artículos si la pantalla es grande */
 @media (min-width: 768px) {
@@ -110,8 +164,11 @@ text-decoration: underline;
     a.back-to-top {
         font-size: 24px; 
     }
-}
 
+    .product-grid li {
+        width: calc(50% - 20px); 
+    }
+}
 /* pantallas pequeñas / móviles */
 @media (max-width: 600px) {
     .container {
@@ -130,39 +187,12 @@ text-decoration: underline;
         padding-left: 5px;
         padding-right: 5px; 
     }
+    .product-grid li {
+        width: 100%; /* 1 producto por fila en pantallas pequeñas */
+    }
+
+    form input[type="email"] {
+        width: 100%; /* Ajustar formulario a pantallas pequeñas */
+    }
 }
 
-#Productos {
-    text-align: center;
-    margin: 20px;
-}
-
-.product-grid {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-.product-grid li {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.product-grid img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-grid p {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-}
