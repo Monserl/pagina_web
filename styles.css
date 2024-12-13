@@ -79,7 +79,7 @@ nav ul li {
     padding-bottom: 10px;
    }
 
-   .center-content {
+   .responsive-imagen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +200,7 @@ footer {
         height: 100%;
         border: 0;
     }
-    .center-content {
+    .responsive-imagen {
         margin: 30px auto; 
         max-width: 400px; 
     }
@@ -249,12 +249,12 @@ footer {
         border: 0;
     }
 
-    .center-content {
+    .responsive-imagen{
         margin: 10px auto;
         padding: 0 10px; 
     }
 
-    .center-content img {
+    .responsive-imagen img {
         width: 100%; 
         max-width: 200px; 
         height: auto;
